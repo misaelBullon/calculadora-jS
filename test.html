@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Wallpoet&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divTitulo">
+        <h1>Calculadora con javaScript</h1>
+    </div>
+    <div class ="container">
+        <div class="pantalla" id="pantalla">
+            <div class="d" id="d1"><h2 id="segmento1"></h2></div>
+            <div class="d" id="d2"><h2 id="segmento2"></h2></div>
+        </div>
+        <div id="botonera">
+            <div id="boton1" class="boton"><button type="button" class="btn btn-outline-primary" id="b1" value="C">CLEAR</button></div>
+            <div id="boton2" class="boton"><button type="button" class="btn btn-outline-primary" id="b2" value="^" onclick="potencia(arreglo)">POW</button></div>
+            <div id="boton3" class="boton"><button type="button" class="btn btn-outline-primary" id="b3" value="%" onclick="porcentaje(arreglo)">%</button></div>
+            <div id="boton4" class="boton"><button type="button" class="btn btn-outline-primary" id="b4" value="/" onclick="division(arreglo)">/</button></div>
+            <div id="boton5" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b5" value="7" onclick="returnValue(this)">7</button></div>
+            <div id="boton6" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b6" value="8" onclick="returnValue(this)">8</button></div>
+            <div id="boton7" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b7" value="9" onclick="returnValue(this)">9</button></div>
+            <div id="boton8" class="boton"><button type="button" class="btn btn-outline-primary" id="b8" value="X" onclick="multiplicacion(arreglo)">X</button></div>
+            <div id="boton9" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b9" value="4" onclick="returnValue(this)">4</button></div>
+            <div id="boton10" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b10" value="5" onclick="returnValue(this)">5</button></div>
+            <div id="boton11" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b11" value="6" onclick="returnValue(this)">6</button></div>
+            <div id="boton12" class="boton"><button type="button" class="btn btn-outline-primary" id="b12" value="-" onclick="resta(arreglo)">-</button></div>
+            <div id="boton13" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b13" value="1" onclick="returnValue(this)">1</button></div>
+            <div id="boton14" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b14" value="2" onclick="returnValue(this)">2</button></div>
+            <div id="boton15" class="boton"><button type="button" class="btn btn-outline-primary numero" id="b15" value="3" onclick="returnValue(this)">3</button></div>
+            <div id="boton16" class="boton"><button type="button" class="btn btn-outline-primary" id="b16" value="+" onclick="suma(arreglo)">+</button></div>
+            <div id="boton17" class="boton"><button type="button" class="btn btn-outline-primary" id="b17" value="+/-">BACK</button></div>
+            <div id="boton18" class="boton"><button type="button" class="btn btn-outline-primary" id="b18" value="0" onclick="returnValue(this)">0</button></div>
+            <div id="boton19" class="boton"><button type="button" class="btn btn-outline-primary" id="b19" value=".">.</button></div>
+            <div id="boton20" class="boton"><button type="button" class="btn btn-outline-primary" id="b20" value="=">=</button></div>
+        </div>
+    </div>
+</body>
+<script src="test.js"></script>
+</html>
